@@ -1,46 +1,50 @@
 
+import UIKit
+import AVFoundation
 import SpriteKit
 import GameplayKit
 
+let screenSize = UIScreen.main.bounds
+var screenWidth: CGFloat?
+var screenHeight: CGFloat?
+
 class GameScene: SKScene {
     
-    private var label : SKLabelNode?
-    private var spinnyNode : SKShapeNode?
+    var ocean: Ocean?
+    var plane: Plane?
     
     override func didMove(to view: SKView) {
+        screenWidth = frame.width
+        screenHeight = frame.height
         
+        name = "GAME"
+        
+        // add ocean to the scene
+        ocean = Ocean()
+        ocean?.position = CGPoint(x: 0, y: 773)
+        addChild(ocean!)
+        
+        // add plane to the scene
+        plane = Plane()
+        plane?.position = CGPoint(x: 0, y: -495)
+        addChild(plane!)
         
     }
     
     
     func touchDown(atPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.green
-            self.addChild(n)
-        }
+        plane?.TouchMove(newPos: CGPoint(x: pos.x, y: -495))
     }
     
     func touchMoved(toPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.blue
-            self.addChild(n)
-        }
+        plane?.TouchMove(newPos: CGPoint(x: pos.x, y: -495))
     }
     
     func touchUp(atPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.red
-            self.addChild(n)
-        }
+        plane?.TouchMove(newPos: CGPoint(x: pos.x, y: -495))
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let label = self.label {
-            label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
-        }
         
         for t in touches { self.touchDown(atPoint: t.location(in: self)) }
     }
@@ -59,6 +63,7 @@ class GameScene: SKScene {
     
     
     override func update(_ currentTime: TimeInterval) {
-        // Called before each frame is rendered
+        ocean?.Update()
+        plane?.Update()
     }
 }
