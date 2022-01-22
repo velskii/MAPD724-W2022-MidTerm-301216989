@@ -15,6 +15,11 @@
 		C4E4FE91279C94CE00971FAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E4FE8F279C94CE00971FAB /* Main.storyboard */; };
 		C4E4FE93279C94D200971FAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4E4FE92279C94D200971FAB /* Assets.xcassets */; };
 		C4E4FE96279C94D200971FAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E4FE94279C94D200971FAB /* LaunchScreen.storyboard */; };
+		C4E4FE9F279C96DA00971FAB /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E4FE9E279C96DA00971FAB /* GameProtocol.swift */; };
+		C4E4FEA1279C97E700971FAB /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E4FEA0279C97E700971FAB /* GameObject.swift */; };
+		C4E4FEA3279C9A7500971FAB /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E4FEA2279C9A7500971FAB /* Ocean.swift */; };
+		C4E4FEA5279C9B4A00971FAB /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E4FEA4279C9B4A00971FAB /* Plane.swift */; };
+		C4E4FEA7279C9B7100971FAB /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = C4E4FEA6279C9B7100971FAB /* Assets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		C4E4FE90279C94CE00971FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4E4FE92279C94D200971FAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4E4FE95279C94D200971FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4E4FE9E279C96DA00971FAB /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
+		C4E4FEA0279C97E700971FAB /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
+		C4E4FEA2279C9A7500971FAB /* Ocean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocean.swift; sourceTree = "<group>"; };
+		C4E4FEA4279C9B4A00971FAB /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		C4E4FEA6279C9B7100971FAB /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Assets; path = "../../MAPD724-W2022-ICE1/MAPD724-W2022-ICE1/Assets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,8 @@
 		C4E4FE79279C94CE00971FAB = {
 			isa = PBXGroup;
 			children = (
+				C4E4FE9D279C961E00971FAB /* GameObjects */,
+				C4E4FE9C279C961000971FAB /* Core */,
 				C4E4FE84279C94CE00971FAB /* MAPD724-ICE1 */,
 				C4E4FE83279C94CE00971FAB /* Products */,
 			);
@@ -67,8 +79,27 @@
 				C4E4FE8F279C94CE00971FAB /* Main.storyboard */,
 				C4E4FE92279C94D200971FAB /* Assets.xcassets */,
 				C4E4FE94279C94D200971FAB /* LaunchScreen.storyboard */,
+				C4E4FEA6279C9B7100971FAB /* Assets */,
 			);
 			path = "MAPD724-ICE1";
+			sourceTree = "<group>";
+		};
+		C4E4FE9C279C961000971FAB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C4E4FE9E279C96DA00971FAB /* GameProtocol.swift */,
+				C4E4FEA0279C97E700971FAB /* GameObject.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C4E4FE9D279C961E00971FAB /* GameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				C4E4FEA2279C9A7500971FAB /* Ocean.swift */,
+				C4E4FEA4279C9B4A00971FAB /* Plane.swift */,
+			);
+			path = GameObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4E4FE91279C94CE00971FAB /* Main.storyboard in Resources */,
+				C4E4FEA7279C9B7100971FAB /* Assets in Resources */,
 				C4E4FE88279C94CE00971FAB /* GameScene.sks in Resources */,
 				C4E4FE93279C94D200971FAB /* Assets.xcassets in Resources */,
 				C4E4FE96279C94D200971FAB /* LaunchScreen.storyboard in Resources */,
@@ -145,8 +177,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4E4FE8C279C94CE00971FAB /* GameScene.swift in Sources */,
+				C4E4FE9F279C96DA00971FAB /* GameProtocol.swift in Sources */,
 				C4E4FE8E279C94CE00971FAB /* GameViewController.swift in Sources */,
 				C4E4FE86279C94CE00971FAB /* AppDelegate.swift in Sources */,
+				C4E4FEA3279C9A7500971FAB /* Ocean.swift in Sources */,
+				C4E4FEA1279C97E700971FAB /* GameObject.swift in Sources */,
+				C4E4FEA5279C9B4A00971FAB /* Plane.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
