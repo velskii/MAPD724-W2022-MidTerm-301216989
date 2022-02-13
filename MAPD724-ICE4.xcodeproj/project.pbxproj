@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C41C0B3F27B4B7E40087B81F /* GameManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41C0B3E27B4B7E40087B81F /* GameManeger.swift */; };
+		C41C0B4227B4B8EB0087B81F /* StartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C41C0B4127B4B8EB0087B81F /* StartScene.sks */; };
+		C41C0B4427B4B8FB0087B81F /* EndScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C41C0B4327B4B8FB0087B81F /* EndScene.sks */; };
+		C41C0B4627B4B90C0087B81F /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41C0B4527B4B90C0087B81F /* StartScene.swift */; };
+		C41C0B4827B4B9210087B81F /* EndScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41C0B4727B4B9210087B81F /* EndScene.swift */; };
 		C486154927AB79AE0057EEDB /* CollisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C486154827AB79AE0057EEDB /* CollisionManager.swift */; };
 		C486159027AB8ADA0057EEDB /* bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = C486155627AB8ADA0057EEDB /* bullet.png */; };
 		C486159127AB8ADA0057EEDB /* plane3.png in Resources */ = {isa = PBXBuildFile; fileRef = C486155727AB8ADA0057EEDB /* plane3.png */; };
@@ -81,6 +86,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C41C0B3E27B4B7E40087B81F /* GameManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManeger.swift; sourceTree = "<group>"; };
+		C41C0B4127B4B8EB0087B81F /* StartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartScene.sks; sourceTree = "<group>"; };
+		C41C0B4327B4B8FB0087B81F /* EndScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EndScene.sks; sourceTree = "<group>"; };
+		C41C0B4527B4B90C0087B81F /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
+		C41C0B4727B4B9210087B81F /* EndScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndScene.swift; sourceTree = "<group>"; };
 		C486154827AB79AE0057EEDB /* CollisionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionManager.swift; sourceTree = "<group>"; };
 		C486155627AB8ADA0057EEDB /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet.png; sourceTree = "<group>"; };
 		C486155727AB8ADA0057EEDB /* plane3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane3.png; sourceTree = "<group>"; };
@@ -140,7 +150,7 @@
 		C48615C727AB8D730057EEDB /* ScoreManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreManeger.swift; sourceTree = "<group>"; };
 		C4AA262F27A71F2E00427C2F /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
 		C4AA263127A720C600427C2F /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
-		C4E4FE82279C94CE00971FAB /* MAPD724-ICE3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD724-ICE3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4E4FE82279C94CE00971FAB /* MAPD724-ICE4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD724-ICE4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E4FE85279C94CE00971FAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4E4FE87279C94CE00971FAB /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		C4E4FE89279C94CE00971FAB /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -166,6 +176,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C41C0B4027B4B8920087B81F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C4E4FE87279C94CE00971FAB /* GameScene.sks */,
+				C4E4FE89279C94CE00971FAB /* Actions.sks */,
+				C4E4FE8B279C94CE00971FAB /* GameScene.swift */,
+				C41C0B4127B4B8EB0087B81F /* StartScene.sks */,
+				C41C0B4327B4B8FB0087B81F /* EndScene.sks */,
+				C41C0B4527B4B90C0087B81F /* StartScene.swift */,
+				C41C0B4727B4B9210087B81F /* EndScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		C486154727AB791F0057EEDB /* Managers */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,10 +296,11 @@
 		C4E4FE79279C94CE00971FAB = {
 			isa = PBXGroup;
 			children = (
+				C41C0B4027B4B8920087B81F /* Scenes */,
 				C486154727AB791F0057EEDB /* Managers */,
 				C4E4FE9D279C961E00971FAB /* GameObjects */,
 				C4E4FE9C279C961000971FAB /* Core */,
-				C4E4FE84279C94CE00971FAB /* MAPD724-ICE3 */,
+				C4E4FE84279C94CE00971FAB /* MAPD724-ICE4 */,
 				C4E4FE83279C94CE00971FAB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -283,25 +308,22 @@
 		C4E4FE83279C94CE00971FAB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C4E4FE82279C94CE00971FAB /* MAPD724-ICE3.app */,
+				C4E4FE82279C94CE00971FAB /* MAPD724-ICE4.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C4E4FE84279C94CE00971FAB /* MAPD724-ICE3 */ = {
+		C4E4FE84279C94CE00971FAB /* MAPD724-ICE4 */ = {
 			isa = PBXGroup;
 			children = (
 				C4E4FE85279C94CE00971FAB /* AppDelegate.swift */,
-				C4E4FE87279C94CE00971FAB /* GameScene.sks */,
-				C4E4FE89279C94CE00971FAB /* Actions.sks */,
-				C4E4FE8B279C94CE00971FAB /* GameScene.swift */,
 				C4E4FE8D279C94CE00971FAB /* GameViewController.swift */,
 				C4E4FE8F279C94CE00971FAB /* Main.storyboard */,
 				C4E4FE92279C94D200971FAB /* Assets.xcassets */,
 				C4E4FE94279C94D200971FAB /* LaunchScreen.storyboard */,
 				C486155427AB8ADA0057EEDB /* Assets */,
 			);
-			path = "MAPD724-ICE3";
+			path = "MAPD724-ICE4";
 			sourceTree = "<group>";
 		};
 		C4E4FE9C279C961000971FAB /* Core */ = {
@@ -309,6 +331,7 @@
 			children = (
 				C4E4FE9E279C96DA00971FAB /* GameProtocol.swift */,
 				C4E4FEA0279C97E700971FAB /* GameObject.swift */,
+				C41C0B3E27B4B7E40087B81F /* GameManeger.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -327,9 +350,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C4E4FE81279C94CE00971FAB /* MAPD724-ICE3 */ = {
+		C4E4FE81279C94CE00971FAB /* MAPD724-ICE4 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C4E4FE99279C94D200971FAB /* Build configuration list for PBXNativeTarget "MAPD724-ICE3" */;
+			buildConfigurationList = C4E4FE99279C94D200971FAB /* Build configuration list for PBXNativeTarget "MAPD724-ICE4" */;
 			buildPhases = (
 				C4E4FE7E279C94CE00971FAB /* Sources */,
 				C4E4FE7F279C94CE00971FAB /* Frameworks */,
@@ -339,9 +362,9 @@
 			);
 			dependencies = (
 			);
-			name = "MAPD724-ICE3";
+			name = "MAPD724-ICE4";
 			productName = "MAPD724-ICE1";
-			productReference = C4E4FE82279C94CE00971FAB /* MAPD724-ICE3.app */;
+			productReference = C4E4FE82279C94CE00971FAB /* MAPD724-ICE4.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -359,7 +382,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C4E4FE7D279C94CE00971FAB /* Build configuration list for PBXProject "MAPD724-ICE3" */;
+			buildConfigurationList = C4E4FE7D279C94CE00971FAB /* Build configuration list for PBXProject "MAPD724-ICE4" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -372,7 +395,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C4E4FE81279C94CE00971FAB /* MAPD724-ICE3 */,
+				C4E4FE81279C94CE00971FAB /* MAPD724-ICE4 */,
 			);
 		};
 /* End PBXProject section */
@@ -390,6 +413,7 @@
 				C48615B027AB8ADA0057EEDB /* explosion2.png in Resources */,
 				C486159627AB8ADA0057EEDB /* island.png in Resources */,
 				C48615A927AB8ADA0057EEDB /* smallexplosion3.png in Resources */,
+				C41C0B4427B4B8FB0087B81F /* EndScene.sks in Resources */,
 				C4E4FE91279C94CE00971FAB /* Main.storyboard in Resources */,
 				C48615B727AB8ADA0057EEDB /* explosion6.png in Resources */,
 				C48615A127AB8ADA0057EEDB /* smallexplosion5.png in Resources */,
@@ -423,6 +447,7 @@
 				C4E4FE88279C94CE00971FAB /* GameScene.sks in Resources */,
 				C4E4FE93279C94D200971FAB /* Assets.xcassets in Resources */,
 				C48615C027AB8ADA0057EEDB /* yay.mp3 in Resources */,
+				C41C0B4227B4B8EB0087B81F /* StartScene.sks in Resources */,
 				C48615A527AB8ADA0057EEDB /* coin06.png in Resources */,
 				C4E4FE96279C94D200971FAB /* LaunchScreen.storyboard in Resources */,
 				C48615BD27AB8ADA0057EEDB /* engine.mp3 in Resources */,
@@ -457,8 +482,11 @@
 				C48615C827AB8D730057EEDB /* ScoreManeger.swift in Sources */,
 				C486154927AB79AE0057EEDB /* CollisionManager.swift in Sources */,
 				C4E4FE9F279C96DA00971FAB /* GameProtocol.swift in Sources */,
+				C41C0B3F27B4B7E40087B81F /* GameManeger.swift in Sources */,
 				C4AA263027A71F2E00427C2F /* Island.swift in Sources */,
 				C4E4FE8E279C94CE00971FAB /* GameViewController.swift in Sources */,
+				C41C0B4827B4B9210087B81F /* EndScene.swift in Sources */,
+				C41C0B4627B4B90C0087B81F /* StartScene.swift in Sources */,
 				C4E4FE86279C94CE00971FAB /* AppDelegate.swift in Sources */,
 				C4E4FEA3279C9A7500971FAB /* Ocean.swift in Sources */,
 				C4E4FEA1279C97E700971FAB /* GameObject.swift in Sources */,
@@ -623,8 +651,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.MAPD724-ICE2";
-				PRODUCT_NAME = "MAPD724-ICE3";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.MAPD724-ICE4";
+				PRODUCT_NAME = "MAPD724-ICE4";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -650,8 +678,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.MAPD724-ICE2";
-				PRODUCT_NAME = "MAPD724-ICE3";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.MAPD724-ICE4";
+				PRODUCT_NAME = "MAPD724-ICE4";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -661,7 +689,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C4E4FE7D279C94CE00971FAB /* Build configuration list for PBXProject "MAPD724-ICE3" */ = {
+		C4E4FE7D279C94CE00971FAB /* Build configuration list for PBXProject "MAPD724-ICE4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C4E4FE97279C94D200971FAB /* Debug */,
@@ -670,7 +698,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C4E4FE99279C94D200971FAB /* Build configuration list for PBXNativeTarget "MAPD724-ICE3" */ = {
+		C4E4FE99279C94D200971FAB /* Build configuration list for PBXNativeTarget "MAPD724-ICE4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C4E4FE9A279C94D200971FAB /* Debug */,
