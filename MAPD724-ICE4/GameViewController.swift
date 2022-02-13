@@ -42,7 +42,7 @@ class GameViewController: UIViewController, GameManager {
             
             // Initialize the Lives and Score
             CollisionManager.gameViewController = self
-            SetScene(sceneName: "EndScene");
+            SetScene(sceneName: "StartScene");
            
     }
 
