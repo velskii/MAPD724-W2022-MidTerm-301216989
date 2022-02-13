@@ -51,7 +51,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPz-1M-WnD">
                                 <rect key="frame" x="16" y="179" width="358" height="72"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="72" id="X3A-GK-flo"/>
+                                    <constraint firstAttribute="height" constant="72" id="duA-dL-Nb7"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Mail Pilot">
@@ -64,22 +64,54 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVc-xD-R3g">
+                                <rect key="frame" x="16" y="259" width="358" height="72"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Game over">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="60" name="Dock51"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41r-MM-2Tt">
+                                <rect key="frame" x="83" y="485" width="224" height="74"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="restartButton"/>
+                                <connections>
+                                    <action selector="EndButton_Pressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Zgo-JH-vGr"/>
+                                    <action selector="StartButton_Pressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="A1c-h8-cie"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="rPz-1M-WnD" firstAttribute="trailing" secondItem="3se-qz-xqx" secondAttribute="trailingMargin" id="793-ip-ANl"/>
-                            <constraint firstItem="9Fd-eR-5rz" firstAttribute="baseline" secondItem="vlz-af-hDG" secondAttribute="baseline" id="7OH-Qx-WLn"/>
-                            <constraint firstItem="rPz-1M-WnD" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" id="Nov-7D-b0j"/>
-                            <constraint firstItem="rPz-1M-WnD" firstAttribute="centerX" secondItem="IRe-0O-XsG" secondAttribute="centerX" id="OCg-rL-8EJ"/>
-                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="vlz-af-hDG" secondAttribute="trailing" constant="21" id="dvA-3u-Ukg"/>
-                            <constraint firstItem="9Fd-eR-5rz" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="29" id="eGC-1M-jEw"/>
-                            <constraint firstItem="9Fd-eR-5rz" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="20" id="olP-X2-q9F"/>
-                            <constraint firstItem="IRe-0O-XsG" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="t3T-4g-1aa"/>
-                            <constraint firstItem="rPz-1M-WnD" firstAttribute="top" secondItem="9Fd-eR-5rz" secondAttribute="bottom" constant="94" id="usA-9v-TTh"/>
+                            <constraint firstItem="41r-MM-2Tt" firstAttribute="top" secondItem="IRe-0O-XsG" secondAttribute="bottom" constant="26" id="54Q-kL-wf7"/>
+                            <constraint firstItem="9Fd-eR-5rz" firstAttribute="baseline" secondItem="vlz-af-hDG" secondAttribute="baseline" id="7yP-gG-Qa5"/>
+                            <constraint firstItem="IRe-0O-XsG" firstAttribute="leading" secondItem="41r-MM-2Tt" secondAttribute="leading" id="A65-aH-ACP"/>
+                            <constraint firstItem="rPz-1M-WnD" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" id="BTL-yy-R8t"/>
+                            <constraint firstItem="9Fd-eR-5rz" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="29" id="OR2-kc-kZN"/>
+                            <constraint firstItem="IRe-0O-XsG" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="P9M-ho-3ww"/>
+                            <constraint firstItem="aVc-xD-R3g" firstAttribute="centerX" secondItem="IRe-0O-XsG" secondAttribute="centerX" id="Yd0-SR-qz1"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="vlz-af-hDG" secondAttribute="trailing" constant="21" id="YfU-7a-EES"/>
+                            <constraint firstItem="IRe-0O-XsG" firstAttribute="top" secondItem="aVc-xD-R3g" secondAttribute="bottom" constant="54" id="cJn-tO-oeo"/>
+                            <constraint firstItem="9Fd-eR-5rz" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="20" id="gd5-63-PGP"/>
+                            <constraint firstItem="rPz-1M-WnD" firstAttribute="trailing" secondItem="3se-qz-xqx" secondAttribute="trailingMargin" id="ken-mP-MSc"/>
+                            <constraint firstItem="rPz-1M-WnD" firstAttribute="leading" secondItem="aVc-xD-R3g" secondAttribute="leading" id="lnP-LC-mXY"/>
+                            <constraint firstItem="rPz-1M-WnD" firstAttribute="top" secondItem="9Fd-eR-5rz" secondAttribute="bottom" constant="94" id="lne-QK-zQL"/>
+                            <constraint firstItem="vlz-af-hDG" firstAttribute="baseline" secondItem="9Fd-eR-5rz" secondAttribute="firstBaseline" id="n1e-wb-hpV"/>
+                            <constraint firstItem="rPz-1M-WnD" firstAttribute="trailing" secondItem="aVc-xD-R3g" secondAttribute="trailing" id="qxi-yc-NPQ"/>
+                            <constraint firstItem="aVc-xD-R3g" firstAttribute="top" secondItem="rPz-1M-WnD" secondAttribute="bottom" constant="8" id="rjM-Kl-KHv"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="41r-MM-2Tt" secondAttribute="bottom" constant="251" id="y5F-Qy-Y5h"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="EndButton" destination="41r-MM-2Tt" id="9WC-vc-b18"/>
+                        <outlet property="EndLabel" destination="aVc-xD-R3g" id="xbd-3e-PsP"/>
                         <outlet property="LivesLabel" destination="9Fd-eR-5rz" id="yju-ds-3UF"/>
                         <outlet property="ScoreLabel" destination="vlz-af-hDG" id="X6V-2w-0rp"/>
                         <outlet property="StartButton" destination="IRe-0O-XsG" id="wml-ir-XJV"/>
@@ -92,6 +124,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="restartButton" width="200" height="60"/>
         <image name="startButton" width="200" height="60"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

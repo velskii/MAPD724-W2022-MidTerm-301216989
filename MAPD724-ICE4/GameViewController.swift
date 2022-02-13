@@ -14,6 +14,7 @@ class GameViewController: UIViewController, GameManager {
     
     @IBOutlet weak var StartButton: UIButton!
     
+    @IBOutlet weak var EndButton: UIButton!
     
     
     @IBOutlet weak var ScoreLabel: UILabel!
@@ -22,6 +23,7 @@ class GameViewController: UIViewController, GameManager {
     
     @IBOutlet weak var StartLabel: UILabel!
     
+    @IBOutlet weak var EndLabel: UILabel!
     
     
     var currentScene: SKScene?
@@ -33,24 +35,14 @@ class GameViewController: UIViewController, GameManager {
         {
             super.viewDidLoad()
             
-            if let view = self.view as! SKView?
-            {
-                // Load the SKScene from 'GameScene.sks'
-                if let scene = SKScene(fileNamed: "GameScene")
-                {
-                    // Set the scale mode to scale to fit the window
-                    scene.scaleMode = .aspectFill
-                    
-                    // Present the scene
-                    view.presentScene(scene)
-                }
-                
-                view.ignoresSiblingOrder = true
-            }
+            LivesLabel.isHidden = true;
+            ScoreLabel.isHidden = true;
+            EndLabel.isHidden = true;
+            EndButton.isHidden = true;
             
             // Initialize the Lives and Score
             CollisionManager.gameViewController = self
-            SetScene(sceneName: "StartScene");
+            SetScene(sceneName: "EndScene");
            
     }
 
@@ -93,6 +85,8 @@ class GameViewController: UIViewController, GameManager {
     }
     
     func PresentEndScene() {
+        EndButton.isHidden = false;
+        EndLabel.isHidden = false;
         ScoreLabel.isHidden = true;
         LivesLabel.isHidden = true;
         
@@ -113,6 +107,21 @@ class GameViewController: UIViewController, GameManager {
         SetScene(sceneName: "GameScene");
         
     }
+    
+    @IBAction func EndButton_Pressed(_ sender: UIButton)
+    {
+        EndButton.isHidden = true;
+        EndLabel.isHidden = true;
+        
+        ScoreLabel.isHidden = false;
+        LivesLabel.isHidden = false;
+        ScoreManager.Score = 0
+        ScoreManager.Lives = 5
+        updateLivesLabel()
+        updateScoreLabel()
+        SetScene(sceneName: "GameScene");
+    }
+    
     
     func SetScene(sceneName: String) -> Void
         {
@@ -136,6 +145,8 @@ class GameViewController: UIViewController, GameManager {
                 view.ignoresSiblingOrder = true
             }
         }
+    
+    
     
 }
     
