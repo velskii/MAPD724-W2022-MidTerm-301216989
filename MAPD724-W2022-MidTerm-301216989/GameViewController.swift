@@ -1,6 +1,6 @@
 //
 //  GameViewController.swift
-//  MAPD724-ICE4
+//  MAPD724-W2022-MidTerm-301216989
 //
 //  FeiliangZhou 301216989
 //
@@ -11,25 +11,15 @@ import GameplayKit
 
 class GameViewController: UIViewController, GameManager {
     
-    
     @IBOutlet weak var StartButton: UIButton!
-    
     @IBOutlet weak var EndButton: UIButton!
     
-    
     @IBOutlet weak var ScoreLabel: UILabel!
-    
     @IBOutlet weak var LivesLabel: UILabel!
-    
     @IBOutlet weak var StartLabel: UILabel!
-    
     @IBOutlet weak var EndLabel: UILabel!
     
-    
     var currentScene: SKScene?
-    
-    
-    
     
     override func viewDidLoad()
         {
@@ -42,7 +32,16 @@ class GameViewController: UIViewController, GameManager {
             
             // Initialize the Lives and Score
             CollisionManager.gameViewController = self
-            SetScene(sceneName: "StartScene");
+            
+            
+            if ( UIDevice.current.orientation.isPortrait) {
+                SetScene(sceneName: "StartScene");
+            } else {
+                SetScene(sceneName: "LandscapeStartScene");
+            }
+            
+           
+        
            
     }
 
@@ -70,6 +69,10 @@ class GameViewController: UIViewController, GameManager {
     
     func updateLivesLabel() -> Void
     {
+        if (ScoreManager.Lives < 1) {
+            PresentEndScene()
+            return
+        }
         print("update lives label ....")
         LivesLabel.text = "Lives: \(ScoreManager.Lives)"
     }
@@ -90,7 +93,12 @@ class GameViewController: UIViewController, GameManager {
         ScoreLabel.isHidden = true;
         LivesLabel.isHidden = true;
         
-        SetScene(sceneName: "EndScene");
+        
+        if ( UIDevice.current.orientation.isPortrait) {
+            SetScene(sceneName: "EndScene");
+        } else {
+            SetScene(sceneName: "LandscapeEndScene");
+        }
     }
     
     
@@ -104,7 +112,14 @@ class GameViewController: UIViewController, GameManager {
         ScoreManager.Lives = 5
         updateLivesLabel()
         updateScoreLabel()
-        SetScene(sceneName: "GameScene");
+
+        if ( UIDevice.current.orientation.isPortrait) {
+            SetScene(sceneName: "GameScene");
+        }
+        if ( UIDevice.current.orientation.isLandscape) {
+            SetScene(sceneName: "LandscapeGameScene");
+        }
+        
         
     }
     
@@ -119,13 +134,18 @@ class GameViewController: UIViewController, GameManager {
         ScoreManager.Lives = 5
         updateLivesLabel()
         updateScoreLabel()
-        SetScene(sceneName: "GameScene");
+        if ( UIDevice.current.orientation.isPortrait) {
+            SetScene(sceneName: "GameScene");
+        } else {
+            SetScene(sceneName: "LandscapeGameScene");
+        }
+        
     }
     
     
     func SetScene(sceneName: String) -> Void
-        {
-            if let view = self.view as! SKView?
+    {
+        if let view = self.view as! SKView?
             {
                 
                 // Load the SKScene - store a reference in currentScene
@@ -144,7 +164,7 @@ class GameViewController: UIViewController, GameManager {
                 
                 view.ignoresSiblingOrder = true
             }
-        }
+    }
     
     
     

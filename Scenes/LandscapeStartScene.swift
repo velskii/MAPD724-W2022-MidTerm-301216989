@@ -1,7 +1,14 @@
+//
+//  LandscapeStartScene.swift
+//  MAPD724-W2022-MidTerm-301216989
+//
+//  Created by Jerry on 2022-03-04.
+//
+
 import SpriteKit
 import GameplayKit
 
-class StartScene: SKScene
+class LandscapeStartScene: SKScene
 {
     // Istance Variables
     var ocean: Ocean?
@@ -16,7 +23,9 @@ class StartScene: SKScene
         
         // add ocean to the scene
         ocean = Ocean() // allocate memory
-        ocean?.position = CGPoint(x: 0, y: 773)
+        ocean?.zRotation = 90
+        ocean?.position = CGPoint(x: 773, y: 0)
+        
         addChild(ocean!) // add the ocean to the scene
     }
     

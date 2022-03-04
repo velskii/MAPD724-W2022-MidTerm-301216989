@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -11,13 +11,13 @@
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="MAPD724_ICE4" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="MAPD724_W2022_MidTerm_301216989" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlz-af-hDG">
-                                <rect key="frame" x="245.66666666666666" y="64" width="123.33333333333334" height="21"/>
+                                <rect key="frame" x="660.66666666666663" y="41" width="123.33333333333337" height="21"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Score: 99999">
                                         <attributes>
@@ -29,7 +29,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Fd-eR-5rz">
-                                <rect key="frame" x="29.000000000000007" y="64" width="79.666666666666686" height="21"/>
+                                <rect key="frame" x="29.000000000000007" y="41" width="79.666666666666686" height="21"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Lives: 99">
                                         <attributes>
@@ -41,7 +41,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRe-0O-XsG">
-                                <rect key="frame" x="83" y="385" width="224" height="74"/>
+                                <rect key="frame" x="275" y="216.66666666666666" width="224" height="73.999999999999972"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="startButton"/>
                                 <connections>
@@ -49,9 +49,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPz-1M-WnD">
-                                <rect key="frame" x="16" y="179" width="358" height="72"/>
+                                <rect key="frame" x="25" y="70" width="724" height="72"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="72" id="duA-dL-Nb7"/>
+                                    <constraint firstAttribute="height" constant="72" id="Zrc-T4-kdy"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Mail Pilot">
@@ -65,7 +65,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVc-xD-R3g">
-                                <rect key="frame" x="16" y="259" width="358" height="72"/>
+                                <rect key="frame" x="25" y="150" width="724" height="62.666666666666657"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Game over">
                                         <attributes>
@@ -78,7 +78,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41r-MM-2Tt">
-                                <rect key="frame" x="83" y="485" width="224" height="74"/>
+                                <rect key="frame" x="275" y="289.33333333333331" width="224" height="80.666666666666686"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="restartButton"/>
                                 <connections>
@@ -90,23 +90,21 @@
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="41r-MM-2Tt" firstAttribute="top" secondItem="IRe-0O-XsG" secondAttribute="bottom" constant="26" id="54Q-kL-wf7"/>
-                            <constraint firstItem="9Fd-eR-5rz" firstAttribute="baseline" secondItem="vlz-af-hDG" secondAttribute="baseline" id="7yP-gG-Qa5"/>
-                            <constraint firstItem="IRe-0O-XsG" firstAttribute="leading" secondItem="41r-MM-2Tt" secondAttribute="leading" id="A65-aH-ACP"/>
-                            <constraint firstItem="rPz-1M-WnD" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" id="BTL-yy-R8t"/>
-                            <constraint firstItem="9Fd-eR-5rz" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="29" id="OR2-kc-kZN"/>
-                            <constraint firstItem="IRe-0O-XsG" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="P9M-ho-3ww"/>
-                            <constraint firstItem="aVc-xD-R3g" firstAttribute="centerX" secondItem="IRe-0O-XsG" secondAttribute="centerX" id="Yd0-SR-qz1"/>
-                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="vlz-af-hDG" secondAttribute="trailing" constant="21" id="YfU-7a-EES"/>
-                            <constraint firstItem="IRe-0O-XsG" firstAttribute="top" secondItem="aVc-xD-R3g" secondAttribute="bottom" constant="54" id="cJn-tO-oeo"/>
-                            <constraint firstItem="9Fd-eR-5rz" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="20" id="gd5-63-PGP"/>
-                            <constraint firstItem="rPz-1M-WnD" firstAttribute="trailing" secondItem="3se-qz-xqx" secondAttribute="trailingMargin" id="ken-mP-MSc"/>
-                            <constraint firstItem="rPz-1M-WnD" firstAttribute="leading" secondItem="aVc-xD-R3g" secondAttribute="leading" id="lnP-LC-mXY"/>
-                            <constraint firstItem="rPz-1M-WnD" firstAttribute="top" secondItem="9Fd-eR-5rz" secondAttribute="bottom" constant="94" id="lne-QK-zQL"/>
-                            <constraint firstItem="vlz-af-hDG" firstAttribute="baseline" secondItem="9Fd-eR-5rz" secondAttribute="firstBaseline" id="n1e-wb-hpV"/>
-                            <constraint firstItem="rPz-1M-WnD" firstAttribute="trailing" secondItem="aVc-xD-R3g" secondAttribute="trailing" id="qxi-yc-NPQ"/>
-                            <constraint firstItem="aVc-xD-R3g" firstAttribute="top" secondItem="rPz-1M-WnD" secondAttribute="bottom" constant="8" id="rjM-Kl-KHv"/>
-                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="41r-MM-2Tt" secondAttribute="bottom" constant="251" id="y5F-Qy-Y5h"/>
+                            <constraint firstItem="IRe-0O-XsG" firstAttribute="top" secondItem="aVc-xD-R3g" secondAttribute="bottom" constant="4.0000000000000568" id="3V9-tm-8Yf"/>
+                            <constraint firstItem="rPz-1M-WnD" firstAttribute="top" secondItem="9Fd-eR-5rz" secondAttribute="bottom" constant="8" id="4Xg-JR-eWT"/>
+                            <constraint firstItem="rPz-1M-WnD" firstAttribute="leading" secondItem="aVc-xD-R3g" secondAttribute="leading" id="JLU-aH-QFI"/>
+                            <constraint firstItem="vlz-af-hDG" firstAttribute="trailing" secondItem="3se-qz-xqx" secondAttribute="trailingMargin" id="Jhc-60-bT1"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="rPz-1M-WnD" secondAttribute="trailing" constant="51" id="OWg-tN-fly"/>
+                            <constraint firstItem="41r-MM-2Tt" firstAttribute="top" secondItem="aVc-xD-R3g" secondAttribute="bottom" constant="76.666666666666572" id="WXE-8p-h9b"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="IRe-0O-XsG" secondAttribute="trailing" constant="301" id="a9e-wi-bsh"/>
+                            <constraint firstItem="9Fd-eR-5rz" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="-31" id="ahg-hZ-QAJ"/>
+                            <constraint firstItem="aVc-xD-R3g" firstAttribute="centerX" secondItem="IRe-0O-XsG" secondAttribute="centerX" id="grL-vA-MiF"/>
+                            <constraint firstItem="9Fd-eR-5rz" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="41" id="nFP-mn-0wV"/>
+                            <constraint firstItem="9Fd-eR-5rz" firstAttribute="baseline" secondItem="vlz-af-hDG" secondAttribute="baseline" id="pIC-0k-lA6"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="41r-MM-2Tt" secondAttribute="bottom" constant="-0.99999999999994316" id="pZC-XD-kfk"/>
+                            <constraint firstItem="aVc-xD-R3g" firstAttribute="top" secondItem="rPz-1M-WnD" secondAttribute="bottom" constant="8" id="zMb-DB-R3u"/>
+                            <constraint firstItem="IRe-0O-XsG" firstAttribute="leading" secondItem="41r-MM-2Tt" secondAttribute="leading" id="zcK-bs-NyO"/>
+                            <constraint firstItem="rPz-1M-WnD" firstAttribute="trailing" secondItem="aVc-xD-R3g" secondAttribute="trailing" id="zgC-nf-10Q"/>
                         </constraints>
                     </view>
                     <connections>
@@ -120,7 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-13.846153846153845" y="49.763033175355446"/>
+            <point key="canvasLocation" x="-173" y="55"/>
         </scene>
     </scenes>
     <resources>

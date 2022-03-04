@@ -44,6 +44,10 @@ class GameObject : SKSpriteNode, GameProtocol
         
     }
     
+//    func CheckBoundsInLandscapeMode() {
+//        
+//    }
+    
     func Reset() {
         
     }

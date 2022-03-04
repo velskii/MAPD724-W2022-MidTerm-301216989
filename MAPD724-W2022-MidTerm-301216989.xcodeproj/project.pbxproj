@@ -12,6 +12,12 @@
 		C41C0B4427B4B8FB0087B81F /* EndScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C41C0B4327B4B8FB0087B81F /* EndScene.sks */; };
 		C41C0B4627B4B90C0087B81F /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41C0B4527B4B90C0087B81F /* StartScene.swift */; };
 		C41C0B4827B4B9210087B81F /* EndScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41C0B4727B4B9210087B81F /* EndScene.swift */; };
+		C41E85E227D2826600D458C9 /* LandscapeGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C41E85E127D2826600D458C9 /* LandscapeGameScene.sks */; };
+		C41E85E427D2827A00D458C9 /* LandscapeGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E85E327D2827A00D458C9 /* LandscapeGameScene.swift */; };
+		C41E85E627D289F600D458C9 /* LandscapeStartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E85E527D289F600D458C9 /* LandscapeStartScene.swift */; };
+		C41E85E827D28A0800D458C9 /* LandscapeStartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C41E85E727D28A0800D458C9 /* LandscapeStartScene.sks */; };
+		C41E85EA27D2A43500D458C9 /* LandscapeEndScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C41E85E927D2A43500D458C9 /* LandscapeEndScene.sks */; };
+		C41E85EC27D2A44E00D458C9 /* LandscapeEndScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E85EB27D2A44E00D458C9 /* LandscapeEndScene.swift */; };
 		C486154927AB79AE0057EEDB /* CollisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C486154827AB79AE0057EEDB /* CollisionManager.swift */; };
 		C486159027AB8ADA0057EEDB /* bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = C486155627AB8ADA0057EEDB /* bullet.png */; };
 		C486159127AB8ADA0057EEDB /* plane3.png in Resources */ = {isa = PBXBuildFile; fileRef = C486155727AB8ADA0057EEDB /* plane3.png */; };
@@ -91,6 +97,12 @@
 		C41C0B4327B4B8FB0087B81F /* EndScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EndScene.sks; sourceTree = "<group>"; };
 		C41C0B4527B4B90C0087B81F /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
 		C41C0B4727B4B9210087B81F /* EndScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndScene.swift; sourceTree = "<group>"; };
+		C41E85E127D2826600D458C9 /* LandscapeGameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LandscapeGameScene.sks; sourceTree = "<group>"; };
+		C41E85E327D2827A00D458C9 /* LandscapeGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeGameScene.swift; sourceTree = "<group>"; };
+		C41E85E527D289F600D458C9 /* LandscapeStartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeStartScene.swift; sourceTree = "<group>"; };
+		C41E85E727D28A0800D458C9 /* LandscapeStartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LandscapeStartScene.sks; sourceTree = "<group>"; };
+		C41E85E927D2A43500D458C9 /* LandscapeEndScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LandscapeEndScene.sks; sourceTree = "<group>"; };
+		C41E85EB27D2A44E00D458C9 /* LandscapeEndScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeEndScene.swift; sourceTree = "<group>"; };
 		C486154827AB79AE0057EEDB /* CollisionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionManager.swift; sourceTree = "<group>"; };
 		C486155627AB8ADA0057EEDB /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet.png; sourceTree = "<group>"; };
 		C486155727AB8ADA0057EEDB /* plane3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane3.png; sourceTree = "<group>"; };
@@ -150,7 +162,7 @@
 		C48615C727AB8D730057EEDB /* ScoreManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreManeger.swift; sourceTree = "<group>"; };
 		C4AA262F27A71F2E00427C2F /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
 		C4AA263127A720C600427C2F /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
-		C4E4FE82279C94CE00971FAB /* MAPD724-ICE4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD724-ICE4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4E4FE82279C94CE00971FAB /* MAPD724-W2022-MidTerm-301216989.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD724-W2022-MidTerm-301216989.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E4FE85279C94CE00971FAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4E4FE87279C94CE00971FAB /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		C4E4FE89279C94CE00971FAB /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -179,13 +191,19 @@
 		C41C0B4027B4B8920087B81F /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				C4E4FE87279C94CE00971FAB /* GameScene.sks */,
 				C4E4FE89279C94CE00971FAB /* Actions.sks */,
-				C4E4FE8B279C94CE00971FAB /* GameScene.swift */,
-				C41C0B4127B4B8EB0087B81F /* StartScene.sks */,
-				C41C0B4327B4B8FB0087B81F /* EndScene.sks */,
 				C41C0B4527B4B90C0087B81F /* StartScene.swift */,
+				C41C0B4127B4B8EB0087B81F /* StartScene.sks */,
 				C41C0B4727B4B9210087B81F /* EndScene.swift */,
+				C41C0B4327B4B8FB0087B81F /* EndScene.sks */,
+				C4E4FE8B279C94CE00971FAB /* GameScene.swift */,
+				C4E4FE87279C94CE00971FAB /* GameScene.sks */,
+				C41E85E127D2826600D458C9 /* LandscapeGameScene.sks */,
+				C41E85E327D2827A00D458C9 /* LandscapeGameScene.swift */,
+				C41E85E527D289F600D458C9 /* LandscapeStartScene.swift */,
+				C41E85E727D28A0800D458C9 /* LandscapeStartScene.sks */,
+				C41E85E927D2A43500D458C9 /* LandscapeEndScene.sks */,
+				C41E85EB27D2A44E00D458C9 /* LandscapeEndScene.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -300,7 +318,7 @@
 				C486154727AB791F0057EEDB /* Managers */,
 				C4E4FE9D279C961E00971FAB /* GameObjects */,
 				C4E4FE9C279C961000971FAB /* Core */,
-				C4E4FE84279C94CE00971FAB /* MAPD724-ICE4 */,
+				C4E4FE84279C94CE00971FAB /* MAPD724-W2022-MidTerm-301216989 */,
 				C4E4FE83279C94CE00971FAB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -308,12 +326,12 @@
 		C4E4FE83279C94CE00971FAB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C4E4FE82279C94CE00971FAB /* MAPD724-ICE4.app */,
+				C4E4FE82279C94CE00971FAB /* MAPD724-W2022-MidTerm-301216989.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C4E4FE84279C94CE00971FAB /* MAPD724-ICE4 */ = {
+		C4E4FE84279C94CE00971FAB /* MAPD724-W2022-MidTerm-301216989 */ = {
 			isa = PBXGroup;
 			children = (
 				C4E4FE85279C94CE00971FAB /* AppDelegate.swift */,
@@ -323,7 +341,7 @@
 				C4E4FE94279C94D200971FAB /* LaunchScreen.storyboard */,
 				C486155427AB8ADA0057EEDB /* Assets */,
 			);
-			path = "MAPD724-ICE4";
+			path = "MAPD724-W2022-MidTerm-301216989";
 			sourceTree = "<group>";
 		};
 		C4E4FE9C279C961000971FAB /* Core */ = {
@@ -350,9 +368,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C4E4FE81279C94CE00971FAB /* MAPD724-ICE4 */ = {
+		C4E4FE81279C94CE00971FAB /* MAPD724-W2022-MidTerm-301216989 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C4E4FE99279C94D200971FAB /* Build configuration list for PBXNativeTarget "MAPD724-ICE4" */;
+			buildConfigurationList = C4E4FE99279C94D200971FAB /* Build configuration list for PBXNativeTarget "MAPD724-W2022-MidTerm-301216989" */;
 			buildPhases = (
 				C4E4FE7E279C94CE00971FAB /* Sources */,
 				C4E4FE7F279C94CE00971FAB /* Frameworks */,
@@ -362,9 +380,9 @@
 			);
 			dependencies = (
 			);
-			name = "MAPD724-ICE4";
+			name = "MAPD724-W2022-MidTerm-301216989";
 			productName = "MAPD724-ICE1";
-			productReference = C4E4FE82279C94CE00971FAB /* MAPD724-ICE4.app */;
+			productReference = C4E4FE82279C94CE00971FAB /* MAPD724-W2022-MidTerm-301216989.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -382,7 +400,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C4E4FE7D279C94CE00971FAB /* Build configuration list for PBXProject "MAPD724-ICE4" */;
+			buildConfigurationList = C4E4FE7D279C94CE00971FAB /* Build configuration list for PBXProject "MAPD724-W2022-MidTerm-301216989" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -395,7 +413,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C4E4FE81279C94CE00971FAB /* MAPD724-ICE4 */,
+				C4E4FE81279C94CE00971FAB /* MAPD724-W2022-MidTerm-301216989 */,
 			);
 		};
 /* End PBXProject section */
@@ -405,9 +423,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C41E85E227D2826600D458C9 /* LandscapeGameScene.sks in Resources */,
 				C48615A327AB8ADA0057EEDB /* coin07.png in Resources */,
 				C48615AF27AB8ADA0057EEDB /* enemy1.png in Resources */,
 				C48615B327AB8ADA0057EEDB /* ocean.png in Resources */,
+				C41E85EA27D2A43500D458C9 /* LandscapeEndScene.sks in Resources */,
 				C486159F27AB8ADA0057EEDB /* coin04.png in Resources */,
 				C486159D27AB8ADA0057EEDB /* restartButton.png in Resources */,
 				C48615B027AB8ADA0057EEDB /* explosion2.png in Resources */,
@@ -433,6 +453,7 @@
 				C48615C227AB8ADA0057EEDB /* textureAtlas.json in Resources */,
 				C486159B27AB8ADA0057EEDB /* coin08.png in Resources */,
 				C486159C27AB8ADA0057EEDB /* coin09.png in Resources */,
+				C41E85E827D28A0800D458C9 /* LandscapeStartScene.sks in Resources */,
 				C48615AD27AB8ADA0057EEDB /* nextButton.png in Resources */,
 				C48615A727AB8ADA0057EEDB /* coin02.png in Resources */,
 				C48615A427AB8ADA0057EEDB /* smallexplosion6.png in Resources */,
@@ -482,11 +503,14 @@
 				C48615C827AB8D730057EEDB /* ScoreManeger.swift in Sources */,
 				C486154927AB79AE0057EEDB /* CollisionManager.swift in Sources */,
 				C4E4FE9F279C96DA00971FAB /* GameProtocol.swift in Sources */,
+				C41E85E427D2827A00D458C9 /* LandscapeGameScene.swift in Sources */,
 				C41C0B3F27B4B7E40087B81F /* GameManeger.swift in Sources */,
 				C4AA263027A71F2E00427C2F /* Island.swift in Sources */,
 				C4E4FE8E279C94CE00971FAB /* GameViewController.swift in Sources */,
 				C41C0B4827B4B9210087B81F /* EndScene.swift in Sources */,
+				C41E85EC27D2A44E00D458C9 /* LandscapeEndScene.swift in Sources */,
 				C41C0B4627B4B90C0087B81F /* StartScene.swift in Sources */,
+				C41E85E627D289F600D458C9 /* LandscapeStartScene.swift in Sources */,
 				C4E4FE86279C94CE00971FAB /* AppDelegate.swift in Sources */,
 				C4E4FEA3279C9A7500971FAB /* Ocean.swift in Sources */,
 				C4E4FEA1279C97E700971FAB /* GameObject.swift in Sources */,
@@ -644,6 +668,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -651,8 +676,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.MAPD724-ICE4";
-				PRODUCT_NAME = "MAPD724-ICE4";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.MAPD724-W2022-MidTerm-301216989";
+				PRODUCT_NAME = "MAPD724-W2022-MidTerm-301216989";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -671,6 +696,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -678,8 +704,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.MAPD724-ICE4";
-				PRODUCT_NAME = "MAPD724-ICE4";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.MAPD724-W2022-MidTerm-301216989";
+				PRODUCT_NAME = "MAPD724-W2022-MidTerm-301216989";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -689,7 +715,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C4E4FE7D279C94CE00971FAB /* Build configuration list for PBXProject "MAPD724-ICE4" */ = {
+		C4E4FE7D279C94CE00971FAB /* Build configuration list for PBXProject "MAPD724-W2022-MidTerm-301216989" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C4E4FE97279C94D200971FAB /* Debug */,
@@ -698,7 +724,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C4E4FE99279C94D200971FAB /* Build configuration list for PBXNativeTarget "MAPD724-ICE4" */ = {
+		C4E4FE99279C94D200971FAB /* Build configuration list for PBXNativeTarget "MAPD724-W2022-MidTerm-301216989" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C4E4FE9A279C94D200971FAB /* Debug */,

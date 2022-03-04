@@ -7,7 +7,7 @@ class Cloud : GameObject
     // initializer
     init()
     {
-        super.init(imageString: "cloud", initialScale: 1.0)
+        super.init(imageString: "cloud", initialScale: 0.5)
         Start()
     }
     
@@ -17,22 +17,47 @@ class Cloud : GameObject
     }
     
     override func CheckBounds() {
-        if (position.y <= -756)
+        
+        if (UIDevice.current.orientation.isLandscape)
         {
-            Reset()
+            zRotation = 90
+            if (position.x <= -756)
+            {
+                Reset()
+            }
+        
+        } else {
+            if (position.y <= -756)
+            {
+                Reset()
+            }
         }
     }
     
     override func Reset() {
-        verticalSpeed = CGFloat((randomSource?.nextUniform())! * 5.0) + 5.0
+        if (UIDevice.current.orientation.isPortrait)
+        {
+            verticalSpeed = CGFloat((randomSource?.nextUniform())! * 5.0) + 5.0
+            
+            horizontalSpeed = CGFloat((randomSource?.nextUniform())! * -4.0) + 2.0
+            
+            let randomX: Int = (randomSource?.nextInt(upperBound: 524))! - 262
+            position.x = CGFloat(randomX)
+            
+            let randomY: Int = (randomSource?.nextInt(upperBound: 20))! + 756
+            position.y = CGFloat(randomY)
+        } else {
+            horizontalSpeed = CGFloat((randomSource?.nextUniform())! * 5.0) + 5.0
+            
+            verticalSpeed = CGFloat((randomSource?.nextUniform())! * -4.0) + 2.0
+            
+            let randomY: Int = (randomSource?.nextInt(upperBound: 524))! - 262
+            position.y = CGFloat(randomY)
+            
+            let randomX: Int = (randomSource?.nextInt(upperBound: 20))! + 756
+            position.x = CGFloat(randomX)
+        }
         
-        horizontalSpeed = CGFloat((randomSource?.nextUniform())! * -4.0) + 2.0
-        
-        let randomX: Int = (randomSource?.nextInt(upperBound: 524))! - 262
-        position.x = CGFloat(randomX)
-        
-        let randomY: Int = (randomSource?.nextInt(upperBound: 20))! + 756
-        position.y = CGFloat(randomY)
         
         isColliding = false
     

@@ -17,28 +17,54 @@ class Ocean : GameObject
     {
         zPosition = 0
         verticalSpeed = 5.0
+        horizontalSpeed = 5.0
     }
     
     override func CheckBounds() {
-        if (position.y <= -773)
+        if(UIDevice.current.orientation.isPortrait)
         {
-            Reset()
+            if (position.y <= -773)
+            {
+                Reset()
+            }
+        } else {
+            if (position.x <= -773)
+            {
+                Reset()
+            }
         }
+        
     }
     
     override func Reset() {
-        position.y = 773
+        if(UIDevice.current.orientation.isPortrait)
+        {
+            position.y = 773
+        } else {
+            position.x = 773
+        }
+        
     }
     
     override func Update()
     {
-        Move()
+        if(UIDevice.current.orientation.isPortrait){
+            Move()
+        } else {
+            MoveInLandscapeMode()
+        }
+        
         CheckBounds()
     }
     
     func Move()
     {
         position.y -= verticalSpeed!
+    }
+    
+    func MoveInLandscapeMode()
+    {
+        position.x -= horizontalSpeed!
     }
    
 }

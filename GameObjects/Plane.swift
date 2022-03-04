@@ -5,7 +5,7 @@ class Plane : GameObject
 {
     init()
     {
-        super.init(imageString: "plane", initialScale: 2.0)
+        super.init(imageString: "plane", initialScale: 1.0)
         Start()
     }
     
@@ -23,6 +23,7 @@ class Plane : GameObject
     }
     
     override func CheckBounds() {
+    
         if(position.x <= -310)
         {
             position.x = -310
@@ -32,6 +33,8 @@ class Plane : GameObject
         {
             position.x = 310
         }
+    
+        
     }
     
     func TouchMove(newPos: CGPoint)
