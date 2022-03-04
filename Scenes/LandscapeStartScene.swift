@@ -2,7 +2,8 @@
 //  LandscapeStartScene.swift
 //  MAPD724-W2022-MidTerm-301216989
 //
-//  Created by Jerry on 2022-03-04.
+//  Created by Feiliang Zhou.
+//  Date: March 4, 2022
 //
 
 import SpriteKit
@@ -23,7 +24,7 @@ class LandscapeStartScene: SKScene
         
         // add ocean to the scene
         ocean = Ocean() // allocate memory
-        ocean?.zRotation = 90
+        ocean?.zRotation = 67.5
         ocean?.position = CGPoint(x: 773, y: 0)
         
         addChild(ocean!) // add the ocean to the scene

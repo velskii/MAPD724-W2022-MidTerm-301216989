@@ -27,7 +27,7 @@ class LandscapeGameScene: SKScene {
         
         // add ocean to the scene
         ocean = Ocean()
-        ocean?.zRotation = 90
+        ocean?.zRotation = 67.5
         ocean?.position = CGPoint(x: 733, y: 0)
         addChild(ocean!)
         

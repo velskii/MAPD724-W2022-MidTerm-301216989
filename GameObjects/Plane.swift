@@ -23,16 +23,29 @@ class Plane : GameObject
     }
     
     override func CheckBounds() {
-    
-        if(position.x <= -310)
+        if(UIDevice.current.orientation.isPortrait)
         {
-            position.x = -310
+            if(position.x <= -310)
+            {
+                position.x = -310
+            }
+            
+            if(position.x >= 310)
+            {
+                position.x = 310
+            }
+        } else {
+            if(position.y <= -310)
+            {
+                position.y = -310
+            }
+            
+            if(position.y >= 310)
+            {
+                position.y = 310
+            }
         }
         
-        if(position.x >= 310)
-        {
-            position.x = 310
-        }
     
         
     }

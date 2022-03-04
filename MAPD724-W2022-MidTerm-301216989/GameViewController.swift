@@ -3,6 +3,7 @@
 //  MAPD724-W2022-MidTerm-301216989
 //
 //  FeiliangZhou 301216989
+//  Date: March 4, 2022
 //
 
 import UIKit
@@ -39,9 +40,6 @@ class GameViewController: UIViewController, GameManager {
             } else {
                 SetScene(sceneName: "LandscapeStartScene");
             }
-            
-           
-        
            
     }
 
